@@ -3,7 +3,7 @@
     height: 100vh;
     padding-top: 1px;
 }
-.title{
+.titulo{
     color: white;
     text-align: center;
     font-size: 40px;
@@ -41,4 +41,27 @@
 }
 .playero{
     color: #498afb;
+}
+.controls{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 1em;
+    align-items: center;
+}
+.controls button{
+    color: white;
+    padding: 8px;
+    border-radius: 8px;
+    border: none;
+    font-size: 20px;
+    margin-left: 1em;
+    cursor: pointer;
+}
+
+.restart{
+    background-color: #498afb;
+}
+#reset{
+    background-color: #ff3860;
 }
