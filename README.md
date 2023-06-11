@@ -10,7 +10,7 @@ PD: este proyecto es no es totalmente de mi autoria.
 Javascript (vanilla), HTML, CSS
 
 
-## Idea
+## Creditos
 
 - [@tilakjain123](https://www.github.com/tilakjain123 )
 
