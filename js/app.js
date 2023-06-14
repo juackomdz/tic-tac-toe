@@ -63,7 +63,7 @@ window.addEventListener('DOMContentLoaded', () => {
             case PlayerX_Win:
                 anunciador.innerHTML = 'Jugador <span class="playerX">X</span> Gana';
                 break;
-            case Draw:
+            case Empate:
                 anunciador.innerHTML = 'Empate';
                 break;
         }
@@ -77,4 +77,11 @@ window.addEventListener('DOMContentLoaded', () => {
     const updateBoard = (index) =>{
         board[index] = currentPl;
     };
+
+    const changePlayer = () => {
+        playerDisplay.classList.remove('player$(currentPl)');
+        currentPl =  currentPl==='X'? 'O': 'X';
+        playerDisplay.innerText=currentPl;
+        playerDisplay.classList.add(`player${currentPl}`);
+    }
 });
