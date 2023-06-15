@@ -14,3 +14,7 @@ Javascript (vanilla), HTML, CSS
 
 - [@tilakjain123](https://www.github.com/tilakjain123 )
 
+## Demo
+
+- [Link](https://juackomdz.github.io/tic-tac-toe/)
+
