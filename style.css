@@ -42,7 +42,7 @@
 .playero{
     color: #498afb;
 }
-.controls{
+.control{
     display: flex;
     justify-content: center;
     flex-direction: row;

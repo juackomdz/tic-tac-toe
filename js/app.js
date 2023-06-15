@@ -84,4 +84,35 @@ window.addEventListener('DOMContentLoaded', () => {
         playerDisplay.innerText=currentPl;
         playerDisplay.classList.add(`player${currentPl}`);
     }
+
+    const userAction = (tile, index) => {
+        if (validAction(tile) && isGameActive) {
+            tiles.innerText = currentPl;
+            tiles.classList.add('player${currentPl}');
+            updateBoard(index);
+            ValidacionResultados();
+            changePlayer();
+        }
+    }
+
+    const resetBoard = () => {
+        board = ["","","","","","","","",""]
+        isGameActive = true;
+        anunciador.classList.add("hide");
+
+        if (currentPl==="O") {
+            changePlayer();
+        }
+
+        tiles.forEach((tile) => {
+            tile.innerText ="";
+            tile.classList.remove("playerX", "playerO");
+        })
+    }
+
+    tiles.forEach((tile, index) => {
+        tile.addEventListener("click",()=>{userAction(tile, index)})
+    })
+
+    reset.addEventListener("click", resetBoard);
 });
