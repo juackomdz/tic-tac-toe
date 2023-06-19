@@ -25,11 +25,11 @@ window.addEventListener('DOMContentLoaded', () => {
 
         [0,4,8],
         [2,4,6],
-    ]
+    ];
 
     function ValidacionResultados() {
         let roundWin = false;
-        for (let i = 0; i < 7; i++) {
+        for (let i = 0; i <= 7; i++) {
             const winCondicion = condition[i];
             const a = board[winCondicion[0]];
             const b = board[winCondicion[1]];
@@ -50,7 +50,7 @@ window.addEventListener('DOMContentLoaded', () => {
             return;
         }
         if (!board.includes("")) {
-            anuncio(Draw);
+            anuncio(Empate);
         }
     }
     
@@ -79,7 +79,7 @@ window.addEventListener('DOMContentLoaded', () => {
     };
 
     const changePlayer = () => {
-        playerDisplay.classList.remove('player$(currentPl)');
+        playerDisplay.classList.remove(`player${currentPl}`);
         currentPl =  currentPl==='X'? 'O': 'X';
         playerDisplay.innerText=currentPl;
         playerDisplay.classList.add(`player${currentPl}`);
@@ -87,8 +87,8 @@ window.addEventListener('DOMContentLoaded', () => {
 
     const userAction = (tile, index) => {
         if (validAction(tile) && isGameActive) {
-            tiles.innerText = currentPl;
-            tiles.classList.add('player${currentPl}');
+            tile.innerText = currentPl;
+            tile.classList.add(`player${currentPl}`);
             updateBoard(index);
             ValidacionResultados();
             changePlayer();
