@@ -7,7 +7,7 @@ PD: este proyecto es no es totalmente de mi autoria.
 
 
 ## 🛠 Herramientas
-Javascript (vanilla), HTML, CSS
+Javascript, HTML, CSS
 
 
 ## Creditos
