@@ -45,7 +45,7 @@ window.addEventListener('DOMContentLoaded', () => {
         }
     
         if (roundWin) {
-            anuncio(currentPl === "X" ? PlayerO_Win : PlayerX_Win);
+            anuncio(currentPl === "X" ? PlayerX_Win : PlayerO_Win);
             isGameActive=false;
             return;
         }
